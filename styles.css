@@ -2,13 +2,15 @@
   display: none !important;
 }
 
-.w-container {
-  margin: 0 auto;
-  width: 600px;
-}
-
 textarea {
   resize: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
 }
 
 .lds-ripple {
@@ -97,4 +99,58 @@ input {
 	padding-right: 10px;
     content: "\2665";
     color: #9c5597;
+}
+
+@media screen and (max-width: 677px) {
+	.container {
+		max-width: 1200px;
+		margin-left: inherit;
+		margin-right: inherit;
+		padding: 30px;
+	}
+	
+	.tabs {
+		list-style: none;
+		display: flex;
+		margin: 15px 0 30px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.tabs li {
+		margin-bottom: 15px;
+	}
+
+	.tabs li:last-child {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 547px) {
+	.panel-head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		padding: 10px 15px;
+		background: #fafafa;
+		flex-direction: column;
+	}
+	.panel-body {
+	text-align: center;
+	}
+
+	.w-panel-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.panel-body {
+		padding: 10px 15px;
+	}
 }
